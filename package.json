@@ -1,0 +1,15 @@
+{
+  "name": "helloworld-nextjs-medium",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "next dev"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.25.6",
+    "next": "^14.2.13",
+    "styled-components": "^6.1.13"
+  },
+  "devDependencies": {
+    "babel-plugin-styled-components": "^2.1.4"
+  }
+}
