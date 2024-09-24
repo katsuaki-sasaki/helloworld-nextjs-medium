@@ -1,5 +1,3 @@
-import { useRouter } from 'next/router';
-
 const blogPosts = {
     'post-1': {
         title: 'My First Blog Post',
