@@ -59,16 +59,21 @@
     helloworld-nextjs-medium/
     ├── pages/
     │   ├── api/              # APIルート、サーバーサイドでの処理やデータ取得に使用される
+    │   │   └── hello.js      # APIのエンドポイント（例: helloを返すだけのシンプルなAPI）
     │   ├── about.js          # 単一ページ（例: Aboutページ）
     │   ├── blog/             # 複数ページを持つサブディレクトリ（例: 各ブログ記事のページ）
+    │   │   ├── [slug].js     # 各ブログ記事の動的ルート
+    │   │   └── index.js      # ブログ一覧ページ
     │   └── index.js          # ホームページ（Hello Worldメッセージを表示）
     ├── components/           # 共通コンポーネント
+    │   ├── Button.js         # ボタンコンポーネント
     │   ├── Header.js         # ヘッダーコンポーネント
     │   └── SEO.js            # SEOのメタタグを管理するコンポーネント
     ├── public/               # 静的アセット（画像、フォントなど）
     ├── styles/
     │   ├── global.css        # グローバルスタイル
     │   └── components/       # コンポーネントごとのスタイル
+    │       └── Button.module.css    # ボタンコンポーネント専用のスタイル
     ├── lib/                  # APIやデータベース接続のロジック
     ├── hooks/                # カスタムフック
     ├── utils/                # ユーティリティ関数
