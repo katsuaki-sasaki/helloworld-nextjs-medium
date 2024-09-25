@@ -11,8 +11,9 @@
   - [さらに詳しく](#さらに詳しく)
 
 ## 必要条件
-  - [Node.js](https://nodejs.org/) バージョン14.x以上
-  - パッケージマネージャとして [npm](https://www.npmjs.com/) もしくは [yarn](https://yarnpkg.com/)
+  - [Node.js](https://nodejs.org/) バージョン 14.x 〜 16.x
+  - [npm](https://www.npmjs.com/) または [yarn](https://yarnpkg.com/) の最新バージョン
+  - `styled-components` バージョン ^5.0
 
 ## 中規模の特徴
   - 10〜20ページ程度のサイトやアプリ
@@ -85,16 +86,12 @@
 
 ### 重要なファイル
   - `pages/index.js`: Hello World メッセージとSEO、画像最適化が行われているメインファイル。
-  - `components/SEO.js`: ページのSEO対策を行うための共通コンポーネント。
+  - `components/SEO.js`: このコンポーネントは、ページごとのSEO設定（metaタグやtitleタグの動的設定）を管理します。各ページで異なるSEO情報を設定し、検索エンジンのランキング向上に役立てます。
   - `styles/globals.css`: グローバルスタイルを管理。
   - `public/images/`: 画像ファイルを格納するフォルダ。`next/image` で画像最適化が行われます。
+
 
 ## さらに詳しく
   Next.jsの詳細については、以下のリソースをご覧ください：
   - [Next.js Documentation](https://nextjs.org/docs) - Next.js公式ドキュメント
   - [Learn Next.js](https://nextjs.org/learn) - インタラクティブなNext.js学習コース
-
-```shell
-npm install styled-components
-npm install --save-dev babel-plugin-styled-components
-```
